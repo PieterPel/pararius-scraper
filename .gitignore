@@ -1,3 +1,6 @@
 # Default ignored files
 /code/config.py
 /code/test.xlsx
+/code/~$test.xlsx
+/output/pararius.xlsx
+/output/~$pararius.xlsx
