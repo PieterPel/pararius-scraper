@@ -163,7 +163,16 @@ def put_dictionary_in_sheet(order, var_display_dict, scraped_dict, sheet):
 # Methods that filters the listings (can be changed as desired)
 def filter_listings(_, listing_dict, city):
 
-    if listing_dict["neighborhood"] in ['Tarwewijk', 'Oosterflank', 'Carnisse', 'Zuidwijk', 'Liskwartier', 'Zestienhoven', 'Bloemhof', 'Lombardijen', 'Hillegersberg']:
+    if listing_dict["neighborhood"] in ['Tarwewijk', 
+                                        'Oosterflank', 
+                                        'Carnisse', 
+                                        'Zuidwijk', 
+                                        'Liskwartier', 
+                                        'Zestienhoven', 
+                                        'Bloemhof', 
+                                        'Lombardijen', 
+                                        'Hillegersberg',
+                                        'Oud Charlois']:
         return False
     elif listing_dict["price_per_bedroom"] > 750:
 
@@ -191,4 +200,4 @@ var_display_dict = {"price": "Price",
                  "price_per_bedroom": "Price per bedroom"}
 
 # Order of the columns
-order = ['price', 'nbedrooms', 'nrooms', 'area','neighborhood', 'street', 'zipcode', 'since', 'agent', 'url']
+order = ['price', 'nbedrooms', 'nrooms', 'price_per_bedroom', 'area','neighborhood', 'street', 'zipcode', 'since', 'agent', 'url']
