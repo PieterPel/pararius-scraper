@@ -2,12 +2,14 @@
 import methods
 import openpyxl
 import pickle
+import os
 
 cities = ["Rotterdam", "Amsterdam"]
 
 for city in cities:
 
     # Open the workbook
+    os.chdir("..")
     wb = openpyxl.load_workbook("output/pararius.xlsx")
 
     # Extract the urls of the city
