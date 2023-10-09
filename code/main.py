@@ -28,10 +28,10 @@ for city in cities:
     methods.put_dictionary_in_sheet(methods.order, methods.var_display_dict, filtered_dict, ws_filtered)
 
     # Save dictionaries using pickle
-    with open(f'{city}_all.pkl', 'wb') as fp:
+    with open(f'output/pickles/{city}_all.pkl', 'wb') as fp:
         pickle.dump(scraped_dict, fp)
 
-    with open(f'{city}_filtered.pkl', 'wb') as fp:
+    with open(f'output/pickles/{city}_filtered.pkl', 'wb') as fp:
         pickle.dump(filtered_dict, fp)
 
     # Save workbook
