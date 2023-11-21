@@ -4,6 +4,7 @@ import openpyxl
 import pickle
 import os
 import config
+import sys
 
 cities = ["Rotterdam", "Amsterdam"]
 
@@ -38,5 +39,5 @@ for city in cities:
     # Save workbook
     wb.save('output/pararius.xlsx')
 
-
+sys.exit(0)
 

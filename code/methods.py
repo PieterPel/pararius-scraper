@@ -172,7 +172,14 @@ def filter_listings(_, listing_dict, city):
                                         'Bloemhof', 
                                         'Lombardijen', 
                                         'Hillegersberg',
-                                        'Oud Charlois']:
+                                        'Oud Charlois',
+                                        'Groot IJsselmonde',
+                                        'Oud IJsselmonde',
+                                        'Zuidplein',
+                                        'Het Lage Land',
+                                        'Hillesluis',
+                                        'Feijenoord',
+                                        'Vreewijk']:
         return False
     elif listing_dict["price_per_bedroom"] > 750:
 
